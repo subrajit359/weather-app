@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <div class="search-box">
+                <input type="text" id="search-box" placeholder="Search your city...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <div class="current-weather">
+            <h2 id="city-name">Detecting location...</h2>
+            <p class="temp" id="temperature">--°C</p>
+            <p class="condition" id="weather-condition">---</p>
+            <div class="details">
+                <p><i class="fas fa-tint"></i> Humidity: <span id="humidity">--%</span></p>
+                <p><i class="fas fa-wind"></i> Wind: <span id="wind">-- m/s</span></p>
+                <p><i class="fas fa-tachometer-alt"></i> Pressure: <span id="pressure">-- hPa</span></p>
+            </div>
+        </div>
+
+        <div class="hourly-weather">
+            <h3>Hourly Weather</h3>
+            <div class="hourly-list" id="hourly-list">
+                <!-- Hourly data will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div class="sun-moon">
+            <h3>Sun & Moon</h3>
+            <p id="sunrise">🌞 Sunrise: --:-- AM</p>
+            <p id="sunset">🌞 Sunset: --:-- PM</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
